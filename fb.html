@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-like Navbar</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Your content here -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <div class="container-fluid">
+            <!-- Brand/Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Facebook
+            </a>
+    
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                 <!-- Search Bar -->
+                 <form class="d-flex float-left" style="overflow: auto; " >
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Friends</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notifications</a>
+                    </li>
+                </ul>
+    
+               
+    
+                <!-- User Dropdown -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/icons8-settings-50.png" alt="User Avatar" class="rounded-circle"  style="width:2rem;">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sticky Div on the Left Side -->
+      <div class="col-sm-2 border bg-light ms-0 " >
+        <div style="top: 20px; width: 100%; "  >
+          <div class="sidebar"  >
+            <h4 class="p-3">Home<span class="text-primary pt-3" style="font-size: small; padding-left: 150px;">CREATE</span></h4>
+            <ul class="list-unstyled p-3 " style="overflow-y: scroll;height: 700px;overflow-x: hidden;">
+              <li class="list-unstyled p-3">
+                <img src="./images/icons8-events-48.png" class="rounded" alt="Cinque Terre"><span>Events</span>
+      
+              </li>
+              <li class="list-unstyled p-3">
+                <img src="./images/icons8-game-controller-48.png" class="rounded" alt="Cinque Terre"><span>Game</span>
+              </li>
+              <li class="list-unstyled p-3">
+                <img src="./images/icons8-heart-48.png" class="rounded" alt="Cinque Terre"><span>Fundraiser</span>
+              </li>
+              <li class="list-unstyled p-3">
+                <img src="./images/icons8-wedding-photo-48.png" class="rounded" alt="Cinque Terre"><span>Memories</span>
+              </li>
+              <li class="list-unstyled p-3">
+                <img src="./images/icons8-help-48.png" class="rounded" alt="Cinque Terre"><span>Help</span>
+              </li>
+              <li class="list-unstyled p-3">
+                <img src="./images/icons8-settings-50.png" class="rounded" alt="Cinque Terre"><span>Settings</span>
+              </li>
+              <li class="list-unstyled p-3">
+                <img src="./images/icons8-saved-48.png" class="rounded" alt="Cinque Terre"><span>Saved</span>
+              </li>
+              <li class="list-unstyled p-3">
+                <img src="./images/icons8-learn-more-48.png" class="rounded" alt="Cinque Terre"><span>Learn More</span>
+              </li>
+              <li class="list-unstyled p-3">
+                <img src="./images/icons8-more-48.png" class="rounded" alt="Cinque Terre"><span>More</span>
+              </li>
+              <li class="list-unstyled p-3">
+                <img src="./images/icons8-more-info-48.png" class="rounded" alt="Cinque Terre"><span>More info</span>
+              </li>
+
+            </ul>
+            <footer>
+              
+              
+                
+                <small>
+                  <ul class="list-unstyled  d-flex" >
+                    
+                 
+                  <li class="p-1"><a href="#" >Privacy</a></li>
+                  <li class="p-1"><a href="#" >Terms</a></li>
+                  <li class="p-1"><a href="#" >Ads </a></li>
+                  <li class="p-1"><a href="#" >Choices</a></li>
+                  
+                
+              </ul>
+            </small>
+                
+            </footer>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Main Content Area -->
+      <div class="col-sm-8 ">
+        <div  style="overflow-y: scroll;height: 900px;overflow-x: hidden;"><h3 class="p-3 d-flex  "  >Stories</h3>
+          
+          
+          <div class="cards">
+            <ul class="list-unstyled  d-flex "   >
+              <li>
+                <div class="card rounded">
+                  <img class="card-img-top img-fluid" src="./images/cool-cat-tshirt-design_841543-6910.avif" alt="Card image" style="width:240px;height:350px;object-fit:cover;z-index: 1;position: relative;">
+                  <img src="./images/cat.jpg" class=" border rounded-circle  " alt="Cinque Terre" style="width: 60px;height: 60px;z-index: 10;position:absolute;left: 10px;top: 10px;" >
+                  
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="./images/images.jpg" alt="Card image" style="width:240px;height:350px;object-fit:cover;">
+                  <img src="./images/cat.jpg" class=" border rounded-circle  " alt="Cinque Terre" style="width: 60px;height: 60px;z-index: 10;position:absolute;left: 10px;top: 10px;" >
+                  
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="./images/images (1).jpg" alt="Card image" style="width:240px;height:350px;object-fit:cover;">
+                  <img src="./images/cat.jpg" class=" border rounded-circle  " alt="Cinque Terre" style="width: 60px;height: 60px;z-index: 10;position:absolute;left: 10px;top: 10px;" >
+                  
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="./images/kat.jpg" alt="Card image" style="width:240px;height:350px;object-fit:cover;">
+                  <img src="./images/cat.jpg" class=" border rounded-circle  " alt="Cinque Terre" style="width: 60px;height: 60px;z-index: 10;position:absolute;left: 10px;top: 10px;" >
+                  
+                </div>
+              </li>
+              <li>
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="./images/kat.jpg" alt="Card image" style="width:240px;height:350px;object-fit:cover;"> 
+                  <img src="./images/cat.jpg" class=" border rounded-circle  " alt="Cinque Terre" style="width: 60px;height: 60px;z-index: 10;position:absolute;left: 10px;top: 10px;" >
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="border  container d-flex p-3 " style="width: 70%;">
+            <img src="./images/cat.jpg" class=" border rounded-circle " alt="Cinque Terre" style="width: 50px;height: 50px;" >
+            <button type="button" class="btn btn-light text-body mx-auto  " style="width: 50%;">Add a post</button>
+            <img src="./images/icons8-collage-48.png" class=" border  " alt="Cinque Terre" style="width: 50px;height: 50px;" >
+
+
+          </div>
+          
+          
+          <div class="border  container  p-3 m-auto mt-3" style="width: 70%;">
+            <div class="d-flex ">
+              <img src="./images/cat.jpg" class=" border rounded-circle " alt="Cinque Terre" style="width: 50px;height: 50px;" >
+            <span >
+              <div class=" p-1">
+                <p>Gokul <br>
+                <small>5 mins</small> <img src="./images/icons8-friends-50.png"  alt="Cinque Terre" style="width: 50px;width: 20px;" ></p>
+
+              </div>
+            </span>
+            </div>
+            <p>Having a blast!</p>
+            <img src="./images/14681025_10101183333691729_1960975951212247000_o.jpg" class=" border  " alt="Cinque Terre" style="width:100%" >
+            
+          </div>
+          
+          
+
+        </div>
+      </div>
+      <div class="col-sm-2  border">
+        <div class="m-sm-3">
+          <h4>CONTACTS</h4>
+          <ul class="list-unstyled p-3" style=" width: 100%;overflow-y: scroll;height: 700px;overflow-x: hidden;">
+            <li class="list-unstyled p-3">
+              <img src="./images/cat.jpg" class=" border rounded-circle" alt="Cinque Terre" style="width: 50px;height: 50px;" ><span class="ms-3">Sasi</span>
+    
+            </li>
+            <li class="list-unstyled p-3">
+              <img src="./images/person/1_XKpA4-JcY06QcMOiPB1zaQ.jpg" class="rounded-circle" alt="Cinque Terre" style="width: 50px;height: 50px;" ><span class="ms-3">Thankappan</span>
+            </li>
+            <li class="list-unstyled p-3">
+              <img src="./images/person/images (2).jpg" class="rounded-circle" alt="Cinque Terre" style="width: 50px;height: 50px;" ><span class="ms-3">Muthumani</span>
+            </li>
+            <li class="list-unstyled p-3">
+              <img src="./images/person/photo-1573496359142-b8d87734a5a2.jpg" class="rounded-circle" alt="Cinque Terre" style="width: 50px;height: 50px;" ><span class="ms-3">Gowri</span>
+            </li>
+            <li class="list-unstyled p-3">
+              <img src="./images/person/premium_photo-1689568158814-3b8e9c1a9618.jpg" class="rounded-circle" alt="Cinque Terre" style="width: 50px;height: 50px;" ><span class="ms-3">Velayuthan</span>
+            </li>
+            <li class="list-unstyled p-3">
+              <img src="./images/depositphotos_537460312-stock-photo-vertical-greyscale-closeup-kitten-wall.jpg" class="rounded-circle" alt="Cinque Terre" style="width: 50px;height: 50px;" ><span class="ms-3">Mani</span>
+            </li>
+            <li class="list-unstyled p-3">
+              <img src="./images/cool-cat-tshirt-design_841543-6910.avif" class="rounded-circle" alt="Cinque Terre" style="width: 50px;height: 50px;" ><span class="ms-3">Gopu</span>
+            </li>
+            <li class="list-unstyled p-3">
+              <img src="./images/icons8-learn-more-48.png" class="rounded-circle" alt="Cinque Terre" style="width: 50px;height: 50px;" ><span class="ms-3">Anto</span>
+            </li>
+            <li class="list-unstyled p-3">
+              <img src="./images/kat.jpg" class="rounded-circle" alt="Cinque Terre" style="width: 50px;height: 50px;" ><span class="ms-3">Panto</span>
+            </li>
+            <li class="list-unstyled p-3">
+              <img src="./images/images.jpg" class="rounded-circle " alt="Cinque Terre" style="width: 50px;height: 50px;" ><span class="ms-3">Sara</span>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+    <!-- Bootstrap 5 JS (optional, only if you need Bootstrap's JS features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
